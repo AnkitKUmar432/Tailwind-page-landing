@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        @apply font-body;
+    }
+
+    h1,
+    h2,
+    h3 {
+        @apply font-display text-gray-700 font-medium;
+    }
+
+    .container {
+        @apply px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32;
+    }
+
+    .anchor-hover {
+        @apply border-b border-dotted border-y-gray-300 hover:border-solid hover:border-gray-500;
+    }
+
+    .gradient-hover-inner {
+        @apply bg-slate-50 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50;
+    }
+
+    .h2-style {
+        @apply text-5xl leading-normal sm:font-semibold max-w-2xl;
+    }
+}
